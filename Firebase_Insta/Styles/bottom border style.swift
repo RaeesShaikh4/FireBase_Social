@@ -22,12 +22,3 @@ class BottomBorderLabel: UILabel {
            self.layer.addSublayer(bottomBorder)
        }
 }
-
-//class makeImageViewRound {
-//    static func makeRound(_ imageView: UIImageView?){
-//        guard let imageView = imageView else {
-//            return
-//        }
-//        imageView.layer.cornerRadius = imageView.frame.size
-//    }
-//}
