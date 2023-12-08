@@ -30,6 +30,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         tableView.dataSource = self
         tableView.delegate = self
         fetchUserData()
+        containerView.layer.cornerRadius = 20.0
         
     }
     
@@ -72,6 +73,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         emailLabel.text = user.email
         emailLabel.textColor = UIColor.gray
         cell.accessoryView = emailLabel
+//        cell.detailTextLabel = emailLabel
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -79,14 +81,12 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let selectedUser = user[indexPath.row]
         selectedUserUUID = selectedUser.uuid
         
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         
         homeVC.profileUserID = selectedUserUUID!
-              homeVC.name = selectedUser.name
-              homeVC.email = selectedUser.email
-        
+        homeVC.name = selectedUser.name
+        homeVC.email = selectedUser.email
         
         self.navigationController?.pushViewController(homeVC, animated: true) ?? self.present(homeVC, animated: true, completion: nil)
     }

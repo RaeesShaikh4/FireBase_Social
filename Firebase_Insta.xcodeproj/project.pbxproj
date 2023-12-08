@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		68282C988E9A47CEADDFEE02 /* Pods_Firebase_Insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABDC4C20790AC9F71AB7D6F /* Pods_Firebase_Insta.framework */; };
 		C92BCFFD2B19B21A001879CF /* bottom border style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BCFFC2B19B21A001879CF /* bottom border style.swift */; };
-		C945F1132B1D91B000445F12 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C945F1122B1D91B000445F12 /* temp.swift */; };
 		C95D2A372B1D9C6100180676 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D2A362B1D9C6100180676 /* TableViewController.swift */; };
+		C97D9F202B21EB010027F949 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D9F1F2B21EB010027F949 /* temp.swift */; };
 		C9D274B52B18A19400AAA1F9 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D274B42B18A19400AAA1F9 /* ExtensionViewController.swift */; };
 		C9D274B72B18AAB600AAA1F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9D274B62B18AAB600AAA1F9 /* GoogleService-Info.plist */; };
 		C9D4C0732B187F6F00879A57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4C0722B187F6F00879A57 /* HomeViewController.swift */; };
+		C9D595302B22E7C800AFB59C /* if sorting doesnt work then.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D5952F2B22E7C800AFB59C /* if sorting doesnt work then.swift */; };
 		C9DCEEAE2B176F91003A19A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DCEEAD2B176F91003A19A9 /* AppDelegate.swift */; };
 		C9DCEEB02B176F91003A19A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DCEEAF2B176F91003A19A9 /* SceneDelegate.swift */; };
 		C9DCEEB22B176F91003A19A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DCEEB12B176F91003A19A9 /* ViewController.swift */; };
@@ -28,11 +29,12 @@
 		9FFD1D3482C46D7A64987B05 /* Pods-Firebase_Insta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase_Insta.release.xcconfig"; path = "Target Support Files/Pods-Firebase_Insta/Pods-Firebase_Insta.release.xcconfig"; sourceTree = "<group>"; };
 		BABDC4C20790AC9F71AB7D6F /* Pods_Firebase_Insta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Insta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92BCFFC2B19B21A001879CF /* bottom border style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "bottom border style.swift"; sourceTree = "<group>"; };
-		C945F1122B1D91B000445F12 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		C95D2A362B1D9C6100180676 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C97D9F1F2B21EB010027F949 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		C9D274B42B18A19400AAA1F9 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		C9D274B62B18AAB600AAA1F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9D4C0722B187F6F00879A57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C9D5952F2B22E7C800AFB59C /* if sorting doesnt work then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "if sorting doesnt work then.swift"; sourceTree = "<group>"; };
 		C9DCEEAA2B176F91003A19A9 /* Firebase_Insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase_Insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DCEEAD2B176F91003A19A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9DCEEAF2B176F91003A19A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,8 @@
 		C9DCEEA12B176F91003A19A9 = {
 			isa = PBXGroup;
 			children = (
+				C9D5952F2B22E7C800AFB59C /* if sorting doesnt work then.swift */,
+				C97D9F1F2B21EB010027F949 /* temp.swift */,
 				C9DCEEAC2B176F91003A19A9 /* Firebase_Insta */,
 				C9DCEEAB2B176F91003A19A9 /* Products */,
 				663C75F321DC29E9D208844E /* Pods */,
@@ -131,7 +135,6 @@
 				C9DCEEB82B176F97003A19A9 /* LaunchScreen.storyboard */,
 				C9DCEEBB2B176F97003A19A9 /* Info.plist */,
 				C9D274B62B18AAB600AAA1F9 /* GoogleService-Info.plist */,
-				C945F1122B1D91B000445F12 /* temp.swift */,
 			);
 			path = Firebase_Insta;
 			sourceTree = "<group>";
@@ -254,12 +257,13 @@
 			files = (
 				C9D4C0732B187F6F00879A57 /* HomeViewController.swift in Sources */,
 				C9E82A052B18646200059AD1 /* SecondViewController.swift in Sources */,
+				C97D9F202B21EB010027F949 /* temp.swift in Sources */,
 				C9D274B52B18A19400AAA1F9 /* ExtensionViewController.swift in Sources */,
-				C945F1132B1D91B000445F12 /* temp.swift in Sources */,
 				C9DCEEB22B176F91003A19A9 /* ViewController.swift in Sources */,
 				C9DCEEAE2B176F91003A19A9 /* AppDelegate.swift in Sources */,
 				C92BCFFD2B19B21A001879CF /* bottom border style.swift in Sources */,
 				C95D2A372B1D9C6100180676 /* TableViewController.swift in Sources */,
+				C9D595302B22E7C800AFB59C /* if sorting doesnt work then.swift in Sources */,
 				C9DCEEB02B176F91003A19A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

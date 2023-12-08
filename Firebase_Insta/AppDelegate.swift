@@ -14,11 +14,25 @@ import FirebaseAuth
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if UserDefaults.standard.string(forKey: "userEmail") != nil, UserDefaults.standard.string(forKey: "userPassword") != nil {
+            let tableVC = storyboard.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
+            window?.rootViewController = UINavigationController(rootViewController: tableVC)
+        }else{
+            let logInVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            window?.rootViewController = UINavigationController(rootViewController: logInVC)
+        }
+        
+        window?.makeKeyAndVisible()
+
         return true
     }
 

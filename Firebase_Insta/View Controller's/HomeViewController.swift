@@ -18,12 +18,10 @@ class HomeViewController: UIViewController, protocolToSetBG{
     var loggedInUserID: String?
     var isFollowing: Bool = false
     let db = Firestore.firestore()
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.layer.cornerRadius = profileImage.frame.height / 2
         profileImage.clipsToBounds = true
         
         signIn()
@@ -190,8 +188,6 @@ extension HomeViewController {
                 print("User not authenticated.")
                 return
             }
-
-        
             let userDocRef = db.collection("Users").document(profileUserID)
 
             userDocRef.getDocument { [weak self] (document, error) in
@@ -201,11 +197,12 @@ extension HomeViewController {
                     let profileFollowers = document.data()?["followers"] as? [String] ?? []
                     self.isFollowing = profileFollowers.contains(loggedInUserID)
 
-                    // Set the button title based on follow status
+                    // Seting the button title based on follow status
                     self.updateFollowButtonTitle()
                 } else {
                     print("Error getting profile user document: \(error?.localizedDescription ?? "Unknown error")")
                 }
             }
-        }
+    }
 }
+
